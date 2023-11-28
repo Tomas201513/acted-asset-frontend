@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic from 'src/assets/Wavy.jpg'
+import Pic from 'src/assets/acted.png'
 import {
     Box,
     Typography,
