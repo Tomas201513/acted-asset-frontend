@@ -2,7 +2,7 @@ import axios from "axios";
 import { TokenJson } from "./token/AuthToken";
 import axiosInstance from "src/utils/useAxiosInterceptors";
 
-const api2 = "http://127.0.0.1:8000/api/subCatagories/";
+const api2 = "https://acted-asset-backend.onrender.com/api/subCatagories/";
 
 export const GetSubCatagory = async () => {
     if (localStorage.getItem("accessToken")) {

@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   );
   async function loginUser(values) {
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/auth/logIn", {
+      const res = await axios.post("https://acted-asset-backend.onrender.com/api/auth/logIn", {
         email: values.email,
         password: values.password
       });
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   async function registerUser(values) {
     // console.log("context" + JSON.stringify(values));
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/register", {
+      const res = await axios.post("https://acted-asset-backend.onrender.com/api/auth/register", {
         userName: values.name,
         email: values.email,
         password: values.password,
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }) => {
 
   async function logoutUser() {
     try {
-      const res = await axios.delete("http://127.0.0.1:8000/api/auth/logOut", {
+      const res = await axios.delete("https://acted-asset-backend.onrender.com/api/auth/logOut", {
         data: {
           refreshToken: localStorage.getItem("refreshToken"),
         },

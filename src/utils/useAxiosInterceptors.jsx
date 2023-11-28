@@ -1,7 +1,7 @@
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 
-const baseURL = "http://127.0.0.1:8000";
+const baseURL = "https://acted-asset-backend.onrender.com";
 
 let access = localStorage.getItem("accessToken")
     ? localStorage.getItem("accessToken")

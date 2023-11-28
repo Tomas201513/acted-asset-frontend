@@ -2,7 +2,7 @@ import axios from "axios";
 import { TokenJson } from "./token/AuthToken";
 import axiosInstance from "src/utils/useAxiosInterceptors";
 
-const api = "http://127.0.0.1:8000/api/offices/";
+const api = "https://acted-asset-backend.onrender.com/api/offices/";
 
 export const GetOffice = async () => {
     if (localStorage.getItem("accessToken")) {
